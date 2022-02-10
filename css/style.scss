@@ -1,7 +1,6 @@
 body {
      margin: 0;
      padding: 0;
-     overflow: hidden;
 }
 .app{
     video{
@@ -14,7 +13,8 @@ body {
 .content{
     position: relative;
     z-index: 100;
-    display: flex;
+     overflow: hidden;
+     display: flex;
     height: 100vh;
     align-items: center;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) inset;
@@ -74,7 +74,7 @@ body {
     
     100%{
         filter: hue-rotate(360deg);
-        bottom: random(100)/100 * 100% ;
+        bottom: 100% ;
         opacity: 0;
     }
 }
