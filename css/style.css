@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app video {
+  height: 100vh;
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+  position: fixed;
+  top: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) inset;
+          box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) inset;
+}
+
+.content h1 {
+  color: plum;
+  font-size: 60px;
+}
+
+.heart__block {
+  position: absolute;
+  -webkit-animation: chameleon infinite 5s ease;
+          animation: chameleon infinite 5s ease;
+}
+
+.heart__block .heart {
+  -webkit-animation: swing 2.5s ease infinite;
+          animation: swing 2.5s ease infinite;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.heart__block .heart div {
+  width: 80px;
+  height: 50px;
+  background-color: red;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 0 10px red;
+          box-shadow: 0 0 10px red;
+}
+
+.heart__block .heart .left__piece {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: absolute;
+  -webkit-transform: rotate(45deg) translate(-20%, 0);
+          transform: rotate(45deg) translate(-20%, 0);
+}
+
+.heart__block .heart .right__piece {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) translate(20%, 0);
+          transform: rotate(-45deg) translate(20%, 0);
+}
+
+@-webkit-keyframes swing {
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes swing {
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes chameleon {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    bottom: 0%;
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    bottom: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes chameleon {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    bottom: 0%;
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    bottom: 50%;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
