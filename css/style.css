@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+.app {
+  overflow: hidden;
+}
+
 .app video {
   height: 100vh;
   -webkit-filter: brightness(30%);
@@ -36,6 +40,7 @@ body {
   -webkit-animation: chameleon 1 3s ease;
           animation: chameleon 1 3s ease;
   opacity: 0;
+  overflow: hidden;
 }
 
 .heart__block .heart {

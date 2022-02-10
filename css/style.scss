@@ -3,6 +3,7 @@ body {
      padding: 0;
 }
 .app{
+    overflow: hidden;
     video{
         height: 100vh;
         filter: brightness(30%);
@@ -13,8 +14,8 @@ body {
 .content{
     position: relative;
     z-index: 100;
-     overflow: hidden;
-     display: flex;
+    overflow: hidden;
+    display: flex;
     height: 100vh;
     align-items: center;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) inset;
@@ -28,6 +29,7 @@ body {
     position: absolute;
     animation: chameleon 1 3s ease;
     opacity: 0;
+    overflow: hidden;
     .heart{
         animation: swing 2.5s ease infinite ;
         position: relative;
