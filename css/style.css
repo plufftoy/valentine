@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+.app {
+  overflow: hidden;
+}
+
 .app video {
   height: 100vh;
   -webkit-filter: brightness(30%);
@@ -32,8 +36,9 @@ body {
 
 .heart__block {
   position: absolute;
-  -webkit-animation: chameleon infinite 5s ease;
-          animation: chameleon infinite 5s ease;
+  -webkit-animation: chameleon 1 3s ease;
+          animation: chameleon 1 3s ease;
+  opacity: 0;
 }
 
 .heart__block .heart {
@@ -97,11 +102,14 @@ body {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
     bottom: 0%;
+    opacity: 1;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
   }
   100% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
-    bottom: 50%;
+    bottom: 795px;
     opacity: 0;
   }
 }
@@ -111,11 +119,14 @@ body {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
     bottom: 0%;
+    opacity: 1;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
   }
   100% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
-    bottom: 50%;
+    bottom: 795px;
     opacity: 0;
   }
 }

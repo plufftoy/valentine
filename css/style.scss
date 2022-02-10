@@ -3,6 +3,7 @@ body {
      padding: 0;
 }
 .app{
+    overflow: hidden;
     video{
         height: 100vh;
         filter: brightness(30%);
@@ -25,7 +26,8 @@ body {
 
 .heart__block{
     position: absolute;
-    animation: chameleon infinite 5s ease;
+    animation: chameleon 1 3s ease;
+    opacity: 0;
     .heart{
         animation: swing 2.5s ease infinite ;
         position: relative;
@@ -66,11 +68,13 @@ body {
     0%{
         filter: hue-rotate(0deg);
         bottom: 0%;
+        opacity: 1;
+        transform: translate(0, -100%);
     }
     
     100%{
         filter: hue-rotate(360deg);
-        bottom: 50%;
+        bottom: random(5000) + px;
         opacity: 0;
     }
 }
