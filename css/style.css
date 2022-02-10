@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .app {
@@ -56,8 +58,8 @@ body {
   background-color: red;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-box-shadow: 0 0 10px red;
-          box-shadow: 0 0 10px red;
+  -webkit-box-shadow: 0 0 20px red;
+          box-shadow: 0 0 20px red;
 }
 
 .heart__block .heart .left__piece {

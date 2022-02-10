@@ -27,6 +27,6 @@ setInterval(() => {
     setTimeout(() => {
         app.removeChild(app.children[0])
     }, 3000)
-}, Math.random() * 300)
+}, Math.random() * 200)
 
 // document.onload = heartRainfall()
