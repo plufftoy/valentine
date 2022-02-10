@@ -109,7 +109,7 @@ body {
   100% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
-    bottom: 6515px;
+    bottom: 47%;
     opacity: 0;
   }
 }
@@ -126,7 +126,7 @@ body {
   100% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
-    bottom: 6515px;
+    bottom: 47%;
     opacity: 0;
   }
 }

@@ -74,7 +74,7 @@ body {
     
     100%{
         filter: hue-rotate(360deg);
-        bottom: random(15000) + px;
+        bottom: random(100)/100 * 100% ;
         opacity: 0;
     }
 }
