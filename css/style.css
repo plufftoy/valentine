@@ -40,7 +40,6 @@ body {
   -webkit-animation: chameleon 1 3s ease;
           animation: chameleon 1 3s ease;
   opacity: 0;
-  overflow: hidden;
 }
 
 .heart__block .heart {
@@ -101,34 +100,28 @@ body {
 
 @-webkit-keyframes chameleon {
   0% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
     bottom: 0%;
     opacity: 1;
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
   }
   100% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-    bottom: 100%;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
     opacity: 0;
   }
 }
 
 @keyframes chameleon {
   0% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
     bottom: 0%;
     opacity: 1;
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
   }
   100% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-    bottom: 100%;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
     opacity: 0;
   }
 }

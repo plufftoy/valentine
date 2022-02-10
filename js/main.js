@@ -12,6 +12,8 @@ const createHeart = () => {
     leftPiece.className = 'left__piece'
     rightPiece.className = 'right__piece'
     heartBlock.style.right = Math.random() * 100 + '%'
+    heartBlock.style.bottom = Math.random() * 100 + '%'
+    heartBlock.style.filter = `hue-rotate(${Math.random()*360}deg)`
     app.append(heartBlock)
     heartBlock.append(heart)
     heart.append(leftPiece)

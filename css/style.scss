@@ -29,7 +29,6 @@ body {
     position: absolute;
     animation: chameleon 1 3s ease;
     opacity: 0;
-    overflow: hidden;
     .heart{
         animation: swing 2.5s ease infinite ;
         position: relative;
@@ -68,15 +67,13 @@ body {
 
 @keyframes chameleon {
     0%{
-        filter: hue-rotate(0deg);
         bottom: 0%;
         opacity: 1;
         transform: translate(0, -100%);
     }
     
     100%{
-        filter: hue-rotate(360deg);
-        bottom: 100% ;
+        filter: hue-rotate(0deg); 
         opacity: 0;
     }
 }
