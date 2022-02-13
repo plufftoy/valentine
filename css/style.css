@@ -29,9 +29,10 @@ body {
   top: 0;
   color: #fff;
   z-index: 10;
+  margin-top: 20px;
 }
 
-.content {
+.hearts {
   position: relative;
   z-index: 100;
   overflow: hidden;
@@ -46,7 +47,7 @@ body {
           box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) inset;
 }
 
-.content h1 {
+.hearts h1 {
   color: plum;
   font-size: 60px;
 }
