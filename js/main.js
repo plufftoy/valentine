@@ -91,10 +91,40 @@ const poems = [
         poem: 'Холмы',
         path: '/valentine/poems/hills.mp3',
     },
+    {
+        author: 'Фёдор Тютчев',
+        poem: 'Я встретил вас и всё былое',
+        path: '/valentine/poems/vas.mp3',
+    },
+    {
+        author: 'Александр Блок',
+        poem: 'В ресторане',
+        path: '/valentine/poems/restaurant.mp3',
+    },
+    {
+        author: 'Александр Блок',
+        poem: 'Прошли года, но ты все та же',
+        path: '/valentine/poems/same.mp3',
+    },
+    {
+        author: 'Афанасий Фет',
+        poem: 'Какое счастье, и ночь, и мы одни',
+        path: '/valentine/poems/nignt.mp3',
+    },
+    {
+        author: 'Роберт Рождественский',
+        poem: 'Всё начинается с любви',
+        path: '/valentine/poems/start.mp3',
+    },
+    {
+        author: 'Евгений Соя',
+        poem: 'Здравствуй, моя Хиросима',
+        path: '/valentine/poems/hirosima.mp3',
+    },
 ]
 
 const setPhase = (phase) => {
-    let poem = poems[Math.round(Math.random() * 7)]
+    let poem = poems[Math.round(Math.random() * 13)]
     switch (phase) {
         case 'start':
             let present = document.createElement('p')
@@ -110,7 +140,7 @@ const setPhase = (phase) => {
             content.append(present)
             content.append(poemInfo)
             content.append(audio);
-            break;
+            return
         default:
             return
     }
