@@ -109,7 +109,7 @@ const poems = [
     {
         author: 'Афанасий Фет',
         poem: 'Какое счастье, и ночь, и мы одни',
-        path: '/valentine/poems/nignt.mp3',
+        path: '/valentine/poems/night.mp3',
     },
     {
         author: 'Роберт Рождественский',
