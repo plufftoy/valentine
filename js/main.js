@@ -135,7 +135,7 @@ const setPhase = (phase) => {
             content.removeChild(content.children[0])
             poemInfo.innerText = `${poem.author} - ${poem.poem}`
             present.innerText = `Твой подарок это стих`
-            audio.src = audio.baseURI.replace('index.html', poem.path) 
+            audio.src = audio.baseURI.replace('index.html', '') + poem.path 
             console.log(audio.baseURI);
             audio.autoplay = true
             content.append(present)
