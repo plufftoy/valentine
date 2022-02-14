@@ -54,42 +54,42 @@ const poems = [
     {
         author: 'Сергей Есенин',
         poem: 'Заметался пожар голубой',
-        path: '/poems/hooligan.mp3',
+        path: '/valentine/poems/hooligan.mp3',
     },
     {
         author: 'Сергей Есенин',
         poem: 'Сыплет черемуха снегом',
-        path: '/poems/cheremyha.mp3',
+        path: '/valentine/poems/cheremyha.mp3',
     },
     {
         author: 'Сергей Есенин',
         poem: 'Ну целуй меня, целуй',
-        path: '/poems/kissme.mp3',
+        path: '/valentine/poems/kissme.mp3',
     },
     {
         author: 'Александр Пушкин',
         poem: 'Я помню чудное мгновенье',
-        path: '/poems/chydnoe.mp3',
+        path: '/valentine/poems/chydnoe.mp3',
     },
     {
         author: 'Александр Пушкин',
         poem: 'Признание',
-        path: '/poems/priznanie.mp3',
+        path: '/valentine/poems/priznanie.mp3',
     },
     {
         author: 'Александр Пушкин',
         poem: 'Талисман',
-        path: '/poems/talisman.mp3',
+        path: '/valentine/poems/talisman.mp3',
     },
     {
         author: 'Иосиф Бродский',
         poem: 'Августовские любовники',
-        path: '/poems/august.mp3',
+        path: '/valentine/poems/august.mp3',
     },
     {
         author: 'Иосиф Бродский',
         poem: 'Холмы',
-        path: '/poems/hills.mp3',
+        path: '/valentine/poems/hills.mp3',
     },
 ]
 
