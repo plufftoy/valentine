@@ -54,72 +54,72 @@ const poems = [
     {
         author: 'Сергей Есенин',
         poem: 'Заметался пожар голубой',
-        path: 'poems/hooligan.mp3',
+        path: './poems/hooligan.mp3',
     },
     {
         author: 'Сергей Есенин',
         poem: 'Сыплет черемуха снегом',
-        path: 'poems/cheremyha.mp3',
+        path: './poems/cheremyha.mp3',
     },
     {
         author: 'Сергей Есенин',
         poem: 'Ну целуй меня, целуй',
-        path: 'poems/kissme.mp3',
+        path: './poems/kissme.mp3',
     },
     {
         author: 'Александр Пушкин',
         poem: 'Я помню чудное мгновенье',
-        path: 'poems/chydnoe.mp3',
+        path: './poems/chydnoe.mp3',
     },
     {
         author: 'Александр Пушкин',
         poem: 'Признание',
-        path: 'poems/priznanie.mp3',
+        path: './poems/priznanie.mp3',
     },
     {
         author: 'Александр Пушкин',
         poem: 'Талисман',
-        path: 'poems/talisman.mp3',
+        path: './poems/talisman.mp3',
     },
     {
         author: 'Иосиф Бродский',
         poem: 'Августовские любовники',
-        path: 'poems/august.mp3',
+        path: './poems/august.mp3',
     },
     {
         author: 'Иосиф Бродский',
         poem: 'Холмы',
-        path: 'poems/hills.mp3',
+        path: './poems/hills.mp3',
     },
     {
         author: 'Фёдор Тютчев',
         poem: 'Я встретил вас и всё былое',
-        path: 'poems/vas.mp3',
+        path: './poems/vas.mp3',
     },
     {
         author: 'Александр Блок',
         poem: 'В ресторане',
-        path: 'poems/restaurant.mp3',
+        path: './poems/restaurant.mp3',
     },
     {
         author: 'Александр Блок',
         poem: 'Прошли года, но ты все та же',
-        path: 'poems/same.mp3',
+        path: './poems/same.mp3',
     },
     {
         author: 'Афанасий Фет',
         poem: 'Какое счастье, и ночь, и мы одни',
-        path: 'poems/night.mp3',
+        path: './poems/night.mp3',
     },
     {
         author: 'Роберт Рождественский',
         poem: 'Всё начинается с любви',
-        path: 'poems/start.mp3',
+        path: './poems/start.mp3',
     },
     {
         author: 'Евгений Соя',
         poem: 'Здравствуй, моя Хиросима',
-        path: 'poems/hirosima.mp3',
+        path: './poems/hirosima.mp3',
     },
 ]
 
@@ -135,7 +135,7 @@ const setPhase = (phase) => {
             content.removeChild(content.children[0])
             poemInfo.innerText = `${poem.author} - ${poem.poem}`
             present.innerText = `Твой подарок это стих`
-            audio.src = audio.baseURI.replace('index.html', '') + poem.path 
+            audio.src = poem.path 
             console.log(audio.baseURI);
             audio.autoplay = true
             content.append(present)
