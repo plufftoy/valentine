@@ -1,4 +1,9 @@
+// import {august} from '../poems/august.mp3'
 let heartsField = document.getElementsByClassName('hearts')[0]
+let content = document.getElementsByClassName('content')[0]
+let start = document.getElementsByClassName('start')[0]
+
+start.addEventListener('click', () => setPhase('start'))
 
 document.onmouseup = (e) => {
     createHeart(e.clientX, e.clientY)
@@ -24,7 +29,7 @@ const createHeart = (x, y) => {
     heart.append(rightPiece)
     heartsField.append(heartBlock)
     if(x && y){
-        heartBlock.style.transform = `scale(${scale}, ${scale})`
+        heartBlock.style.transform = `scale(1, 1)`
         heartBlock.style.left = x - (heartBlock.scrollWidth / 2) + 'px'
         heartBlock.style.top = y - (heartBlock.scrollHeight / 2) + 'px'    
         heartBlock.classList.add('heart__click')
@@ -43,16 +48,72 @@ setInterval(() => {
     }, 3000)
 }, 100)
 
-let phase = 'start'
+let phase = ''
+
+const poems = [
+    {
+        author: 'Сергей Есенин',
+        poem: 'Заметался пожар голубой',
+        path: '../poems/hooligan.mp3',
+    },
+    {
+        author: 'Сергей Есенин',
+        poem: 'Сыплет черемуха снегом',
+        path: '../poems/cheremyha.mp3',
+    },
+    {
+        author: 'Сергей Есенин',
+        poem: 'Ну целуй меня, целуй',
+        path: '../poems/kissme.mp3',
+    },
+    {
+        author: 'Александр Пушкин',
+        poem: 'Я помню чудное мгновенье',
+        path: '../poems/chydnoe.mp3',
+    },
+    {
+        author: 'Александр Пушкин',
+        poem: 'Признание',
+        path: '../poems/priznanie.mp3',
+    },
+    {
+        author: 'Александр Пушкин',
+        poem: 'Талисман',
+        path: '../poems/talisman.mp3',
+    },
+    {
+        author: 'Иосиф Бродский',
+        poem: 'Августовские любовники',
+        path: '../poems/august.mp3',
+    },
+    {
+        author: 'Иосиф Бродский',
+        poem: 'Холмы',
+        path: '../poems/hills.mp3',
+    },
+]
 
 const setPhase = (phase) => {
-    phase = phase
+    let poem = poems[Math.round(Math.random() * 7)]
     switch (phase) {
         case 'start':
-            
+            let present = document.createElement('p')
+            let poemInfo = document.createElement('p')
+            let audio = document.createElement('audio')
+            content.removeChild(content.children[0])
+            content.removeChild(content.children[0])
+            content.removeChild(content.children[0])
+            poemInfo.innerText = `${poem.author} - ${poem.poem}`
+            present.innerText = `Твой подарок это стих`
+            audio.src = poem.path
+            audio.autoplay = true
+            content.append(present)
+            content.append(poemInfo)
+            content.append(audio);
             break;
-    
         default:
-            break;
+            return
     }
 }
+
+// setPhase('start')
