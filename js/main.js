@@ -12,6 +12,7 @@ document.onmouseup = (e) => {
     }, 1000)
 }
 
+
 const createHeart = (x, y) => {
     let heartBlock = document.createElement('div')
     let leftPiece = document.createElement('div')
@@ -135,8 +136,9 @@ const setPhase = (phase) => {
             content.removeChild(content.children[0])
             poemInfo.innerText = `${poem.author} - ${poem.poem}`
             present.innerText = `Твой подарок это стих`
-            audio.src = poem.path 
+            audio.src = poem.path + 'xyu'
             console.log(audio.baseURI);
+            audio.onerror = e => alert(e.srcElement.error.message);
             audio.autoplay = true
             content.append(present)
             content.append(poemInfo)
@@ -146,5 +148,3 @@ const setPhase = (phase) => {
             return
     }
 }
-
-// setPhase('start')
