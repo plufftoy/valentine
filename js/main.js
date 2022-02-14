@@ -140,7 +140,8 @@ const setPhase = (phase) => {
             content.append(present)
             content.append(poemInfo)
             content.append(audio);
-            if(audio.paused) audio.src = poem.path.replace('/valentine', '..')
+            if(!audio.duration) audio.src = poem.path.replace('/valentine', '..')
+            // console.log({audio});
             return
         default:
             return
